@@ -135,6 +135,7 @@ import {
 import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
 import { CastingRoleFitSlide } from "@/components/screens/penske/CastingRoleFitSlide";
 import { AuditionScreen } from "@/components/screens/penske/AuditionScreen";
+import { EnsembleSizeSlide } from "@/components/screens/penske/EnsembleSizeSlide";
 
 
 const screens = [
