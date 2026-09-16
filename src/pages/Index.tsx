@@ -135,6 +135,7 @@ import {
 import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
 import { CastingRoleFitSlide } from "@/components/screens/penske/CastingRoleFitSlide";
 import { AuditionScreen } from "@/components/screens/penske/AuditionScreen";
+import { EnsembleSizeSlide } from "@/components/screens/penske/EnsembleSizeSlide";
 
 
 const screens = [
@@ -269,6 +270,9 @@ const screens = [
 
   { id: "A3-1-1c", title: "The Audition — Live", component: AuditionScreen,
     notes: "Live audition. Same role brief goes to three models blind (Candidate A/B/C). Read them out, let the chat vote, then click Cast on the one that fits the voice. 'Reveal who was who' shows the models — usually not the one they expected. 'New audition' re-runs if a reading is weak. Runs solo; no audience needed." },
+
+  { id: "A3-1-1d", title: "Ensemble Size — The Research", component: EnsembleSizeSlide,
+    notes: "Google Research, Jan 2026 — 180 agent configurations, arXiv 2512.08296. Kills the 'more agents is always better' heuristic. Work that splits into parallel parts: a coordinated team beat a single agent by 81%. Work with a strict order (planning): EVERY multi-agent setup was 39–70% worse — coordination ate the cognitive budget. Then the reliability punchline: agents running in parallel with no coordination amplified one error 17.2x; an orchestrator in the middle held it to 4.4x. That orchestrator is the director. Pause on the two numbers." },
 
 
   { id: "A2-3d", title: "Thinking Machines — 80 / 1,000", component: ThinkingMachinesSlide,
