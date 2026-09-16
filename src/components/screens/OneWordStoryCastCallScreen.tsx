@@ -39,18 +39,18 @@ export const OneWordStoryCastCallScreen = () => {
         </div>
 
         <h1 className="slide-title font-display font-bold leading-[1.05] text-foreground">
-          I need <span className="text-primary italic">3 volunteers.</span>
+          I need <span className="text-primary italic">3 writers.</span>
         </h1>
 
         <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-foreground">
           <div className="flex items-center gap-3">
             <Hand className="h-9 w-9 text-primary" />
-            <span className="slide-body font-semibold">Raise your hand.</span>
+            <span className="slide-body font-semibold">Drop your name in the chat.</span>
           </div>
           <span className="slide-body text-muted-foreground">→</span>
           <div className="flex items-center gap-3">
             <Users className="h-9 w-9 text-primary" />
-            <span className="slide-body font-semibold">I'll pick three.</span>
+            <span className="slide-body font-semibold">The lottery picks three.</span>
           </div>
         </div>
 
