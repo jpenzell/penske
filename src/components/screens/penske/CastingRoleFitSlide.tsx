@@ -4,14 +4,15 @@ const ROWS = [
   {
     label: "Same model in every role",
     detail: "One “best” AI plays all the parts",
-    score: 54,
+    score: 59,
+    range: "50–59%",
     tone: "muted" as const,
   },
   {
     label: "Cast at random",
     detail: "Whoever happens to be in the room",
-    score: 52,
-    range: "51–61%",
+    score: 57,
+    range: "54–60%",
     tone: "muted" as const,
   },
   {
