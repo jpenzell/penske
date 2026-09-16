@@ -143,10 +143,11 @@ const screens = [
       <PartnerExerciseSlide
         title="What hairstyle are you today?"
         prompt="60 seconds. One word, one phrase. Don't think too hard."
-        subPrompt="Turn to someone who does a different job than you — provider to supplier, buyer to VP."
+        subPrompt="Picture one word that captures how you're showing up today."
         durationSeconds={60}
+        badgeLabel="Creative Exercise"
       />
-    ), notes: "Deliberately pair across roles. Take 5–8 responses. Land it: from one word, the room produced 200 mental pictures. That's not a communication problem — that's how language works. Same thing happens on a spec, a contract term, or a value analysis request." },
+    ), notes: "Take 5–8 responses from the chat. Land it: from one word, the room produced 200 mental pictures. That's not a communication problem — that's how language works. Same thing happens on a spec, a contract term, or a value analysis request." },
 
 
 
