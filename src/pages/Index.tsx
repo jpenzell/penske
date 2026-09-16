@@ -131,12 +131,21 @@ import {
   AnacondaEDDSlide,
   ULTBenchmarkSlide,
 } from "@/components/screens/sol/ResearchCandidatesSlides";
+import { PenskeLearningCultureSlide } from "@/components/screens/penske/PenskeLearningCultureSlide";
+import { SkillsCrisisSlide } from "@/components/screens/penske/SkillsCrisisSlide";
+import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
 
 
 const screens = [
   // ============ OPENING ============
   { id: "S1", title: "Opening", component: TitleSlide,
     notes: "Curtain up. MFA + MBA, 20 years watching scenes that wouldn't land — in rehearsal rooms and boardrooms. Theater's been working on what you're facing for 400 years." },
+
+  { id: "P-CULTURE", title: "Penske's Learning Culture", component: PenskeLearningCultureSlide,
+    notes: "Acknowledge the room. 95% of 5,200 frontline leaders complete leadership development; 2022 CLO Business Partnership gold. Heaton's line — 'we didn't just digitize' — is the setup: the temptation now is to automate the craft out." },
+
+  { id: "P-CRISIS", title: "The Skills Crisis Pressure", component: SkillsCrisisSlide,
+    notes: "LinkedIn 2025: 49% report executive concern about skills; only 36% are career-development champions. Name the pressure, then reframe: AI is not a speed problem." },
 
   // ============ ACT 1 — THE PROBLEM IS HUMAN ============
   { id: "A1-1", title: "Hairstyle", component: () => (
@@ -341,6 +350,9 @@ const screens = [
     notes: "Provide the want. Suggest the action. Everything else is reaction." },
   { id: "A3-3-7", title: "AI Changes Like Humans", component: AIChangesLikeHumansSlide,
     notes: "OpenAI's GPT-5.5 prompting note — yesterday's playbook becomes noise." },
+
+  { id: "P-HANDOFF", title: "Human / AI Handoffs in Learning Design", component: LearningHandoffsSlide,
+    notes: "Learning outcome 3. AI drafts volume; humans own intent. Ask the chat: which row surprised them? Invite one workflow they'd hand off this month." },
 
   { id: "A4-SUM", title: "The Practice — Cast, Rehearse, Direct", component: PracticeSummarySlide,
     notes: "Summary: cast the ensemble, build the rehearsal room, direct by suggestion — be the eye on the metaphor." },
