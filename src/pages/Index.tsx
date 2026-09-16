@@ -132,7 +132,6 @@ import {
   ULTBenchmarkSlide,
 } from "@/components/screens/sol/ResearchCandidatesSlides";
 
-import { SkillsCrisisSlide } from "@/components/screens/penske/SkillsCrisisSlide";
 import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
 
 
@@ -170,9 +169,6 @@ const screens = [
         </div>
       </div>
     ), notes: "Personal proof of the Zoox reframe. The thing on screen is itself a live, non-deterministic system. For this room: don't ask 'how do we buy AI?' Ask what job we're actually trying to do." },
-  { id: "P-CRISIS", title: "The Skills Crisis Pressure", component: SkillsCrisisSlide,
-    notes: "LinkedIn 2025: 49% report executive concern about skills; only 36% are career-development champions. Name the pressure, then reframe: AI is not a speed problem." },
-
   { id: "L-S3a", title: "One-Word Story — Cast Call", component: OneWordStoryCastCallScreen,
     notes: "Virtual cast call. Drop the join link in the chat; the lottery picks 3 writers at random. Quiet room? Skip ahead and play all the parts yourself — same demo, no waiting." },
 
