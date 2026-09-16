@@ -631,8 +631,20 @@ export const OneWordStoryScreen = () => {
                         </div>
                       </div>
 
-                      <div className="text-center text-sm text-muted-foreground">
-                        Ask the room for 3 brave volunteers, then continue →
+                      <div className="text-center space-y-3">
+                        <p className="text-sm text-muted-foreground">
+                          Drop the join link in the chat, let people opt in, then pick →
+                        </p>
+                        <div className="flex justify-center gap-2">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() => advanceStage('writing')}
+                          >
+                            <ChevronRight className="h-4 w-4 mr-1" />
+                            Skip — I&rsquo;ll play all the parts
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   ) : (
