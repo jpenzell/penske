@@ -131,7 +131,7 @@ import {
   AnacondaEDDSlide,
   ULTBenchmarkSlide,
 } from "@/components/screens/sol/ResearchCandidatesSlides";
-import { PenskeLearningCultureSlide } from "@/components/screens/penske/PenskeLearningCultureSlide";
+
 import { SkillsCrisisSlide } from "@/components/screens/penske/SkillsCrisisSlide";
 import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
 
