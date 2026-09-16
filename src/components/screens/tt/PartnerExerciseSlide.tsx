@@ -29,7 +29,7 @@ export const PartnerExerciseSlide = ({ title, prompt, subPrompt, durationSeconds
         {/* Badge */}
         <div className="inline-flex items-center gap-3 px-5 py-2 bg-secondary/15 border border-secondary/40 rounded-full">
           <Users className="h-5 w-5 text-secondary" />
-          <span className="text-secondary font-bold slide-kicker">Partner Exercise</span>
+          <span className="text-secondary font-bold slide-kicker">{badgeLabel}</span>
         </div>
 
         {/* Title — scale down for longer prompts so nothing clips off-stage */}
