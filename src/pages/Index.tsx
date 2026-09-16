@@ -167,7 +167,7 @@ const screens = [
     ), notes: "Personal proof of the Zoox reframe. The thing on screen is itself a live, non-deterministic system. For this room: don't ask 'how do we buy AI?' Ask what job we're actually trying to do." },
 
   { id: "L-S3a", title: "One-Word Story — Cast Call", component: OneWordStoryCastCallScreen,
-    notes: "Hand-raised cast call. Live, non-deterministic system in action." },
+    notes: "Virtual cast call. Drop the join link in the chat; the lottery picks 3 writers at random. Quiet room? Skip ahead and play all the parts yourself — same demo, no waiting." },
 
   { id: "LD1.92", title: "How AI Predicts — Word by Word", component: LLMExplainerScreen,
     notes: "Auto-playing visualization. Top-4 candidates per step with probabilities. The model isn't looking anything up — it's picking the next word from a distribution. Press P to pause." },
