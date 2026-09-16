@@ -90,7 +90,7 @@ export const CastingRoleFitSlide = () => (
       <Citation
         sources={[
           "Zhang, Kim, Xiang, Gao & Cao (2026). Dynamic Role Assignment for Multi-Agent Debate. arXiv:2601.17152. Amazon AGI / NYU.",
-          "Accuracy on GPQA, DMAD framework. Random casting ranged 51–61% across configurations.",
+          "Accuracy on the GPQA benchmark, DMAD debate framework. Three models: Claude 3.5, Nova Premier, Pixtral.",
         ]}
       />
     </div>
