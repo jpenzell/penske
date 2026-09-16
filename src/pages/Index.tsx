@@ -176,7 +176,7 @@ const screens = [
     notes: "Second live system. A question with a real answer — the answers will still surprise us." },
 
   { id: "LD1.85", title: "Live Estimate — Audience + AI", component: ElephantEstimateScreen,
-    notes: "Type guesses from the room as people shout numbers. AI models stream their estimates in parallel. Number-line shows the spread." },
+    notes: "AI models stream their estimates in parallel automatically. Type guesses as people drop them in the chat. Number-line shows the spread. No audience? The AI numbers alone still make the point." },
 
   { id: "L-S3a2b", title: "Everything Is a Hallucination", component: HallucinationRevealScreen,
     notes: "Banerjee 2024 + OpenAI Kalai 2025. Reframe: 'how would I know?'" },
