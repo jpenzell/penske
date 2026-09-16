@@ -672,7 +672,7 @@ export const OneWordStoryScreen = () => {
                               <p className="text-sm text-muted-foreground">
                                 {candidates.length}{" "}
                                 {candidates.length === 1 ? "person" : "people"}{" "}
-                                volunteered so far. Hang tight — random pick coming.
+                                in the lottery so far. Hang tight — random pick coming.
                               </p>
                             </div>
                           ) : pickedVolunteers.length > 0 ? (
