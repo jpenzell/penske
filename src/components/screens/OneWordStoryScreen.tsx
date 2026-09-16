@@ -516,10 +516,10 @@ export const OneWordStoryScreen = () => {
           </span>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-          Who's Brave Enough?
+          Who&rsquo;s In?
         </h1>
         <p className="text-base md:text-lg text-muted-foreground mt-3 max-w-2xl mx-auto">
-          We need a few volunteers on stage. The lottery picks who writes — everyone else gets to watch the story unfold.
+          Drop the join link in the chat — anyone who opts in goes into the lottery. The lottery picks who writes; everyone else watches the story unfold. Quiet room? Skip ahead and play all the parts yourself.
         </p>
       </div>
 
