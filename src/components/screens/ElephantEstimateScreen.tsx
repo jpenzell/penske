@@ -82,7 +82,7 @@ export const ElephantEstimateScreen = () => {
           body: {
             prompt: QUESTION,
             context:
-              "You are an estimation expert estimating how many elephants could fit inside the Tacoma Dome. State assumptions in 1-2 sentences, then give a specific number of elephants. End your answer with the number followed by the word 'elephants'. Keep it under 60 words.",
+              "You are an estimation expert estimating how many elephants could fit inside Ford Field in Detroit, Michigan. State assumptions in 1-2 sentences, then give a specific number of elephants. End your answer with the number followed by the word 'elephants'. Keep it under 60 words.",
             model,
           },
         })
