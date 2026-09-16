@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Copy, Check, Users, Sparkles } from "lucide-react";
 import { QRCodeSVG } from "qrcode.react";
-import usdlaLogo from "@/assets/usdla-2026-logo.png";
 import { useSession } from "@/contexts/SessionContext";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -28,20 +27,18 @@ export const TitleScreen = () => {
 
   return (
     <div className="flex-1 flex items-center justify-center animate-fade-in relative overflow-hidden min-h-0 bg-iqa-hero">
-      {/* Logo — top right */}
-      <img
-        src={usdlaLogo}
-        alt="USDLA 2026"
-        className="absolute top-6 right-6 md:top-10 md:right-10 h-20 md:h-28 w-auto drop-shadow-2xl z-20"
-      />
+      {/* Client wordmark — top right */}
+      <p className="absolute top-6 right-6 md:top-10 md:right-10 z-20 font-display font-black text-primary text-2xl md:text-4xl tracking-[0.18em]">
+        PENSKE
+      </p>
 
       {/* Year accent — top left, like the template */}
       <div className="absolute top-8 left-8 md:top-12 md:left-12 z-20">
         <p className="font-display font-semibold text-spotlight text-lg md:text-xl tracking-wide">
-          2026
+          Keynote 2026
         </p>
         <p className="font-display text-white/90 text-sm md:text-base tracking-wide">
-          A keynote on L&amp;D and quality
+          How to lead your digital ensemble
         </p>
       </div>
 
@@ -67,21 +64,21 @@ export const TitleScreen = () => {
 
           {/* Main Title */}
           <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] tracking-tight uppercase">
-            Rehearsing
-            <span className="block text-white">the</span>
-            <span className="block bg-gradient-to-r from-spotlight via-accent to-primary bg-clip-text text-transparent">
-              Future
+            AI at the
+            <span className="block text-white">Speed of</span>
+            <span className="block bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+              Live
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-light tracking-tight max-w-2xl">
-            Directing Quality in the Age of AI
+            How to Lead Your Digital Ensemble
           </p>
 
           {/* Conference line */}
           <p className="text-sm md:text-base text-white/60 tracking-wider uppercase">
-            Directing Learning &amp; Quality in the Age of AI
+            A Penske keynote · Josh Penzell
           </p>
 
         </div>
