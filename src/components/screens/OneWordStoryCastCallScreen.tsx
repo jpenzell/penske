@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Hand, Users, Sparkles, Play } from "lucide-react";
+import { MessageSquare, Sparkles, Play } from "lucide-react";
 
 /**
  * S3a — Cast Call (virtual / Zoom version).
- * Drop the join link in chat; anyone who opts in goes into the lottery and
- * three writers are picked at random. If the room is quiet, skip to the
+ * We write a one-word story together in the chat: each person types one
+ * word, and the story builds from there. If the room is quiet, skip to the
  * one-word story slide and play all the parts yourself.
  *
  * Includes a live demo animation showing how the one-word story works.
