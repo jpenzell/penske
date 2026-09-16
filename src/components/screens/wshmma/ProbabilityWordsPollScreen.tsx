@@ -31,7 +31,7 @@ export const ProbabilityWordsPollScreen = () => {
 
       <div className="flex-1 flex flex-col items-center justify-center text-center min-h-0">
         <p className="slide-subtitle text-muted-foreground font-display mb-6">
-          When a supplier says…
+          When you hear…
         </p>
 
         <h1
