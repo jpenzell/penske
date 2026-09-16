@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { Hand, Users, Sparkles, Play } from "lucide-react";
 
 /**
- * S3a — Cast Call (hand-raised version).
- * No QR, no lottery. You point to 3 volunteers in the room, then move to the
- * manual one-word story slide where you type names + words live.
+ * S3a — Cast Call (virtual / Zoom version).
+ * Drop the join link in chat; anyone who opts in goes into the lottery and
+ * three writers are picked at random. If the room is quiet, skip to the
+ * one-word story slide and play all the parts yourself.
  *
  * Includes a live demo animation showing how the one-word story works.
  */
