@@ -10,10 +10,10 @@ interface PresentationModeContextType {
 const PresentationModeContext = createContext<PresentationModeContextType | undefined>(undefined);
 
 const contextValue: PresentationModeContextType = {
-  presentationTitle: "AI for All Minds, Every Team",
+  presentationTitle: "AI at the Speed of Live",
   presenterName: "Josh Penzell",
   presenterCompany: "Imagination Applied",
-  eventName: "WSHMMA · Healthcare Supply Chain",
+  eventName: "Penske · Learning & Development",
 };
 
 export const PresentationModeProvider = ({ children }: { children: ReactNode }) => {

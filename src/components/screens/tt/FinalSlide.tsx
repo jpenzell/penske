@@ -19,7 +19,7 @@ export const FinalSlide = () => {
               Now go imagine.
             </h2>
             <p className="slide-body text-white/85 italic drop-shadow-[0_2px_18px_rgba(0,0,0,0.7)]">
-              Rehearse the future of the supply chain you run — together.
+              Rehearse the future of the learning you design — together.
             </p>
             <p className="slide-body text-white/90 drop-shadow-[0_2px_18px_rgba(0,0,0,0.7)]">
               Josh Penzell · Imagination Applied
@@ -44,7 +44,7 @@ export const FinalSlide = () => {
                 value={connectUrl}
                 size={260}
                 bgColor="#ffffff"
-                fgColor="#003C5E"
+                fgColor="#111111"
                 level="M"
               />
             </div>

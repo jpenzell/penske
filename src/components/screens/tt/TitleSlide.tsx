@@ -31,11 +31,11 @@ export const TitleSlide = () => {
     <div className="flex-1 flex items-center justify-center animate-fade-in relative overflow-hidden min-h-0 bg-iqa-hero">
       {/* Event wordmark — top right */}
       <div className="absolute top-8 right-8 md:top-12 md:right-14 z-20 text-right leading-tight">
-        <p className="slide-body font-display font-bold text-spotlight tracking-[0.18em]">
-          WSHMMA
+        <p className="slide-body font-display font-black text-primary tracking-[0.18em]">
+          PENSKE
         </p>
         <p className="font-display text-foreground/70 text-sm md:text-base tracking-[0.22em] uppercase">
-          2026
+          Keynote 2026
         </p>
 
       </div>
@@ -56,18 +56,18 @@ export const TitleSlide = () => {
 
         {/* Main title */}
         <h1 className="font-display font-bold leading-[0.9] tracking-tight uppercase">
-          <span className="slide-title block text-foreground font-light normal-case italic font-serif">AI for</span>
-          <span className="slide-title-lg block md:text-[9rem] -mt-2 text-spotlight spotlight-glow">
-            All Minds,
+          <span className="slide-title block text-foreground font-light normal-case italic font-serif">AI at the</span>
+          <span className="slide-title-lg block md:text-[9rem] -mt-2 text-primary">
+            Speed of
           </span>
           <span className="slide-title-lg block md:text-[9rem] -mt-4 text-foreground">
-            Every Team<span className="text-accent">.</span>
+            Live<span className="text-primary">.</span>
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="slide-body-lg text-foreground/90 font-light max-w-5xl tracking-tight">
-          From the buyer's desk to the boardroom — directing AI as an ensemble, not a tool
+          How to lead your digital ensemble — directing AI, not prompting it
         </p>
 
         {/* Presenter */}

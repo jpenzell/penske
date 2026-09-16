@@ -50,8 +50,8 @@
     --gradient-primary: linear-gradient(135deg, hsl(355 82% 45%) 0%, hsl(220 14% 22%) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(355 82% 47%) 0%, hsl(42 96% 42%) 100%);
 
-    --gradient-subtle: linear-gradient(180deg, hsl(270 25% 99%) 0%, hsl(220 14% 95%) 100%);
-    --gradient-curtain: linear-gradient(180deg, hsl(270 25% 99%) 0%, hsl(220 14% 94%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 95%) 100%);
+    --gradient-curtain: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 94%) 100%);
     --shadow-soft: 0 2px 8px -2px hsl(220 15% 20% / 0.12);
     --shadow-medium: 0 8px 24px -6px hsl(220 15% 20% / 0.16);
     --shadow-large: 0 16px 48px -12px hsl(220 15% 20% / 0.20);
@@ -435,36 +435,36 @@
 /* Dark keynote — the original deep-purple stage, for dark rooms. */
 :root[data-pres-theme="dark"],
 .dark[data-pres-theme="dark"] {
-  --background: 270 30% 4%;
+  --background: 220 20% 5%;
   --foreground: 0 0% 100%;
-  --card: 270 24% 11%;
+  --card: 220 18% 11%;
   --card-foreground: 0 0% 100%;
-  --popover: 270 24% 11%;
+  --popover: 220 18% 11%;
   --popover-foreground: 0 0% 100%;
-  --primary: 330 95% 72%;
+  --primary: 355 90% 66%;
   --primary-foreground: 0 0% 100%;
   --secondary: 275 90% 78%;
   --secondary-foreground: 0 0% 100%;
-  --muted: 270 15% 20%;
-  --muted-foreground: 270 12% 90%;
+  --muted: 220 14% 20%;
+  --muted-foreground: 220 12% 90%;
   --accent: 350 95% 75%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 85% 65%;
   --destructive-foreground: 0 0% 100%;
-  --border: 270 20% 32%;
-  --input: 270 18% 18%;
-  --ring: 330 95% 72%;
-  --curtain: 272 50% 12%;
+  --border: 220 16% 32%;
+  --input: 220 16% 18%;
+  --ring: 355 90% 66%;
+  --curtain: 220 24% 12%;
   --curtain-foreground: 0 0% 100%;
   --spotlight: 25 100% 68%;
 }
 [data-pres-theme="dark"] .bg-curtain,
 [data-pres-theme="dark"] .bg-iqa-hero {
   background:
-    radial-gradient(ellipse at 30% 30%, hsl(272 70% 35% / 0.38) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 60%, hsl(330 80% 40% / 0.30) 0%, transparent 55%),
+    radial-gradient(ellipse at 30% 30%, hsl(355 75% 34% / 0.38) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, hsl(220 14% 35% / 0.30) 0%, transparent 55%),
     radial-gradient(ellipse at 60% 95%, hsl(42 96% 42% / 0.18) 0%, transparent 50%),
-    linear-gradient(135deg, hsl(270 35% 5%) 0%, hsl(270 30% 2%) 100%) !important;
+    linear-gradient(135deg, hsl(220 22% 6%) 0%, hsl(220 20% 2%) 100%) !important;
 }
 
 /* Dark themes: restore white legacy text + text scrims for legibility. */
@@ -538,9 +538,9 @@
 }
 [data-pres-theme="dark"] .slide-content {
   background:
-    radial-gradient(ellipse at 30% 30%, hsl(272 70% 35% / 0.38) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 60%, hsl(330 80% 40% / 0.30) 0%, transparent 55%),
-    linear-gradient(135deg, hsl(270 35% 5%) 0%, hsl(270 30% 2%) 100%);
+    radial-gradient(ellipse at 30% 30%, hsl(355 75% 34% / 0.38) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, hsl(220 14% 35% / 0.30) 0%, transparent 55%),
+    linear-gradient(135deg, hsl(220 22% 6%) 0%, hsl(220 20% 2%) 100%);
 }
 [data-pres-theme="high-contrast"] .slide-content { background: #000; }
 [data-pres-theme="colorblind"] .slide-content {
