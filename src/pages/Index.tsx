@@ -133,6 +133,8 @@ import {
 } from "@/components/screens/sol/ResearchCandidatesSlides";
 
 import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
+import { CastingRoleFitSlide } from "@/components/screens/penske/CastingRoleFitSlide";
+import { AuditionScreen } from "@/components/screens/penske/AuditionScreen";
 
 
 const screens = [
@@ -261,6 +263,13 @@ const screens = [
         backdropOverlay="heavy"
       />
     ), notes: "You cast for the part (role fit) AND for the room (ensemble). Individual brilliance and group chemistry — both matter, and you have to balance them." },
+
+  { id: "A3-1-1b", title: "Casting — The Research", component: CastingRoleFitSlide,
+    notes: "Amazon AGI + NYU, Jan 2026 (arXiv 2601.17152). Three models run a debate: two opposing sides and a judge. Change only WHO plays WHICH part. Same model in all roles: 50-59%. Random casting: 54-60% — sometimes worse than not bothering. Audition each model for the specific question, then cast: 66%. Punchline: the strongest model on its own was not the best in every role. Individual talent did not predict ensemble fit." },
+
+  { id: "A3-1-1c", title: "The Audition — Live", component: AuditionScreen,
+    notes: "Live audition. Same role brief goes to three models blind (Candidate A/B/C). Read them out, let the chat vote, then click Cast on the one that fits the voice. 'Reveal who was who' shows the models — usually not the one they expected. 'New audition' re-runs if a reading is weak. Runs solo; no audience needed." },
+
 
   { id: "A2-3d", title: "Thinking Machines — 80 / 1,000", component: ThinkingMachinesSlide,
     notes: "Thinking Machines Lab Sept 2025 (ex-OpenAI CTO Mira Murati's lab). Qwen3-235B, temperature 0, 1,000 runs → 80 unique completions. The literal proof that the artifact differs every performance. THE strongest anchor for 'theater, not film' — this is the QA-audience moment." },
