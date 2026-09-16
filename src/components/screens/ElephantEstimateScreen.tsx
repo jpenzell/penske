@@ -145,7 +145,7 @@ export const ElephantEstimateScreen = () => {
           Live Estimate
         </p>
         <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight">
-          How many <span className="text-primary italic">elephants</span> fit in the Tacoma Dome?
+          How many <span className="text-primary italic">elephants</span> fit in Ford Field?
         </h1>
       </header>
 
