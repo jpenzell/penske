@@ -133,6 +133,8 @@ import {
 } from "@/components/screens/sol/ResearchCandidatesSlides";
 
 import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
+import { CastingRoleFitSlide } from "@/components/screens/penske/CastingRoleFitSlide";
+import { AuditionScreen } from "@/components/screens/penske/AuditionScreen";
 
 
 const screens = [
