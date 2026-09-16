@@ -90,6 +90,7 @@ export const LionKingScaleSlide = () => {
               <span className="text-primary not-italic font-semibold">A performance has a life.</span>
             </p>
             <Citation sources={[
+              "Guinness World Records · Highest-grossing entertainment product (The Lion King, musical).",
               "Box Office Mojo · lifetime worldwide grosses (2025).",
               "Disney Theatrical Productions · The Lion King lifetime gross.",
             ]} />
