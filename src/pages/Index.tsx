@@ -131,7 +131,7 @@ import {
   AnacondaEDDSlide,
   ULTBenchmarkSlide,
 } from "@/components/screens/sol/ResearchCandidatesSlides";
-import { PenskeLearningCultureSlide } from "@/components/screens/penske/PenskeLearningCultureSlide";
+
 import { SkillsCrisisSlide } from "@/components/screens/penske/SkillsCrisisSlide";
 import { LearningHandoffsSlide } from "@/components/screens/penske/LearningHandoffsSlide";
 
@@ -141,11 +141,6 @@ const screens = [
   { id: "S1", title: "Opening", component: TitleSlide,
     notes: "Curtain up. MFA + MBA, 20 years watching scenes that wouldn't land — in rehearsal rooms and boardrooms. Theater's been working on what you're facing for 400 years." },
 
-  { id: "P-CULTURE", title: "Penske's Learning Culture", component: PenskeLearningCultureSlide,
-    notes: "Acknowledge the room. 95% of 5,200 frontline leaders complete leadership development; 2022 CLO Business Partnership gold. Heaton's line — 'we didn't just digitize' — is the setup: the temptation now is to automate the craft out." },
-
-  { id: "P-CRISIS", title: "The Skills Crisis Pressure", component: SkillsCrisisSlide,
-    notes: "LinkedIn 2025: 49% report executive concern about skills; only 36% are career-development champions. Name the pressure, then reframe: AI is not a speed problem." },
 
   // ============ ACT 1 — THE PROBLEM IS HUMAN ============
   { id: "A1-1", title: "Hairstyle", component: () => (
@@ -175,6 +170,8 @@ const screens = [
         </div>
       </div>
     ), notes: "Personal proof of the Zoox reframe. The thing on screen is itself a live, non-deterministic system. For this room: don't ask 'how do we buy AI?' Ask what job we're actually trying to do." },
+  { id: "P-CRISIS", title: "The Skills Crisis Pressure", component: SkillsCrisisSlide,
+    notes: "LinkedIn 2025: 49% report executive concern about skills; only 36% are career-development champions. Name the pressure, then reframe: AI is not a speed problem." },
 
   { id: "L-S3a", title: "One-Word Story — Cast Call", component: OneWordStoryCastCallScreen,
     notes: "Virtual cast call. Drop the join link in the chat; the lottery picks 3 writers at random. Quiet room? Skip ahead and play all the parts yourself — same demo, no waiting." },
