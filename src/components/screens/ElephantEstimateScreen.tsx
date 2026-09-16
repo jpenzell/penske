@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Loader2, RotateCcw, Bot, Users } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 
-const QUESTION = "How many ELEPHANTS could fit inside the Tacoma Dome?";
+const QUESTION = "How many ELEPHANTS could fit inside Ford Field?";
 
 type LiveProvider = { label: string; model: string };
 
