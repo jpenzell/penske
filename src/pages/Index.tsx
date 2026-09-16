@@ -185,7 +185,7 @@ const screens = [
     notes: "Anthropic's explainer on probabilistic AI. Treat outputs as drafts to coach, not finished truth." },
 
   { id: "A1-3b", title: "Probability Words — Cycling", component: ProbabilityWordsPollScreen,
-    notes: "Phrases cycle on screen. Ask the room to call out the % they hear for each one. The spread in the room IS the point — and it's the same spread that lives inside a risk email from a vendor." },
+    notes: "Phrases cycle on screen. Ask people to drop the % they hear in the chat for each one. The spread in the chat IS the point — and it's the same spread that lives inside a risk email from a vendor." },
 
   { id: "A1-3c", title: "Annie Duke — Same Words, Different Meanings", component: AnnieDukeStudyScreen,
     notes: "CIA's Sherman Kent 1964 + Mauboussin/Duke replication. 'Serious possibility' = 20% to 80%." },
