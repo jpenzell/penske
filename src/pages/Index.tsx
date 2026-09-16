@@ -324,7 +324,7 @@ const screens = [
     ), notes: "Deciding is what happens at the end of a meeting. Directing is what happens during the scene." },
 
   { id: "A3-3-1b", title: "The Script — Demo", component: ScriptDemoSlide,
-    notes: "Live demo. Read the six lines flat. Then ask volunteers to play it: lovers reuniting, a mugging, a job interview, a breakup. Same words, different scene — that's directing." },
+    notes: "Live demo. Read the six lines flat. Then play it yourself (or take a volunteer from the chat) as: lovers reuniting, a mugging, a job interview, a breakup. Same words, different scene — that's directing." },
 
   { id: "A3-3-2", title: "Stanislavski — Need / Obstacle / Action", component: StanislavskiSlide,
     notes: "Required reading at Juilliard, RADA, Yale Drama. Most leaders only name the outcome. The want and the action are where the work lives." },
