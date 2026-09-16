@@ -17,7 +17,7 @@ export const CarsQuestionIntroScreen = () => {
 
         <h1 className="slide-title-lg font-display font-bold leading-[1.05] text-foreground">
           How many <span className="text-primary italic">elephants</span> could fit inside{" "}
-          <span className="text-primary">the Tacoma Dome?</span>
+          <span className="text-primary">Ford Field?</span>
         </h1>
 
         <p className="slide-caption text-muted-foreground max-w-3xl mx-auto">
