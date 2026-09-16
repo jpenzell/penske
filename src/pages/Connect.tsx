@@ -72,21 +72,17 @@ const Connect = () => {
     }
 
     supabase.functions
-      .invoke("send-transactional-email", {
+      .invoke("send-connect-notification", {
         body: {
-          templateName: "new-connect-submission",
-          recipientEmail: "josh@joshpenzell.com",
           idempotencyKey: `connect-${submissionId}`,
-          templateData: {
-            name: name.trim() || null,
-            email: email.trim() || null,
-            note: note.trim() || null,
-            wantsSlides,
-            wantsFollowup,
-            linkedinClicked,
-            submittedAt,
-            userAgent: navigator.userAgent,
-          },
+          name: name.trim() || null,
+          email: email.trim() || null,
+          note: note.trim() || null,
+          wantsSlides,
+          wantsFollowup,
+          linkedinClicked,
+          submittedAt,
+          userAgent: navigator.userAgent,
         },
       })
       .catch((err) => console.error("notify failed", err));
