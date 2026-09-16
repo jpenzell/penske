@@ -212,11 +212,11 @@ const screens = [
   { id: "A1-4d", title: "Switch the Language, Switch the Values", component: LanguageSwitchesValuesSlide,
     notes: "Bridge from humans to models. If language reshapes human perception, it reshapes a system trained on language." },
 
-  { id: "A1-3e", title: "Same Words — Different Language", component: ProbabilityWordsPersonaScreen,
-    notes: "Now tell each model it's a native Mandarin/Spanish/German/Japanese speaker and ask in that language. The numbers shift — language changes the answer." },
-
   { id: "A1-3f", title: "Cognitive Style — Same Model, Different Role", component: CognitiveStyleDemoSlide,
     notes: "Static receipt. Same model, same prompt, different role framing → different cognitive style." },
+
+  { id: "A1-3e", title: "Same Words — Different Language", component: ProbabilityWordsPersonaScreen,
+    notes: "Now tell each model it's a native Mandarin/Spanish/German/Japanese speaker and ask in that language. The numbers shift — language changes the answer." },
 
 
 
