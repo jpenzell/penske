@@ -191,7 +191,7 @@ const screens = [
     notes: "CIA's Sherman Kent 1964 + Mauboussin/Duke replication. 'Serious possibility' = 20% to 80%." },
 
   { id: "A1-3d", title: "Same Words — Live AI", component: ProbabilityWordsLiveScreen,
-    notes: "Live receipts. Press the button to ask GPT, Claude, Perplexity, and Gemini the same phrases in real time. Four models, four different numbers — the same spread you just saw in the room." },
+    notes: "Live receipts. Press the button to ask GPT, Claude, Perplexity, and Gemini the same phrases in real time. Four models, four different numbers — the same spread you just saw in the chat." },
 
   { id: "L-S3a3b", title: "Language IS the Technology", component: LanguageIsTheTechSlide,
     notes: "LEGACY. Bridge out of Annie Duke." },
