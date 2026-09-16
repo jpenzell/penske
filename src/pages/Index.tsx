@@ -621,7 +621,7 @@ const Index = () => {
         totalScreens={filteredScreens.length}
         currentIndex={currentIndex}
         onNavigate={setCurrentIndex}
-        title="Rehearsing the Future"
+        title="AI at the Speed of Live"
         duration={50}
         notes={filteredScreens[currentIndex]?.notes}
         mode={mode as "presenter" | "participant" | "present"}

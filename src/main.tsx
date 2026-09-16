@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import usdlaLogo from "./assets/usdla-2026-logo.png";
 
 const HEADSHOT_STORAGE_URL =
   "https://wxgdptvgerwudxhihkzn.supabase.co/storage/v1/object/public/era-images/josh-headshot.jpeg";
@@ -18,7 +17,7 @@ const deckImageCache: HTMLImageElement[] = [];
 
 const getDeckImageUrls = () => {
   const bundled = Object.values(assetModules);
-  const external = [usdlaLogo, HEADSHOT_STORAGE_URL];
+  const external = [HEADSHOT_STORAGE_URL];
   return [...new Set([...bundled, ...external].filter(Boolean))];
 };
 
