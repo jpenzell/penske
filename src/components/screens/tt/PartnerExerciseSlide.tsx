@@ -6,9 +6,10 @@ interface PartnerExerciseSlideProps {
   prompt: string;
   subPrompt?: string;
   durationSeconds: number;
+  badgeLabel?: string;
 }
 
-export const PartnerExerciseSlide = ({ title, prompt, subPrompt, durationSeconds }: PartnerExerciseSlideProps) => {
+export const PartnerExerciseSlide = ({ title, prompt, subPrompt, durationSeconds, badgeLabel = "Partner Exercise" }: PartnerExerciseSlideProps) => {
   const [timeLeft, setTimeLeft] = useState(durationSeconds);
   const [isRunning, setIsRunning] = useState(false);
 
