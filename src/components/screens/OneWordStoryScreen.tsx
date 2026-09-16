@@ -558,12 +558,12 @@ export const OneWordStoryScreen = () => {
                 <>
                   <div className="bg-gradient-to-br from-secondary/20 to-primary/10 border-2 border-secondary/40 rounded-2xl p-6 text-center">
                     <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                      ✋ Who's Volunteering?
+                      ✋ Who&rsquo;s In the Lottery?
                     </h2>
                     <p className="text-muted-foreground">
                       {lotteryMode
-                        ? `Anyone can volunteer — we'll randomly pick ${PICK_COUNT} writers.`
-                        : `We need ${gameState.max_volunteers} brave souls to write a story together!`}
+                        ? `Share the join link in the chat — we'll randomly pick ${PICK_COUNT} writers from everyone who opts in.`
+                        : `We need ${gameState.max_volunteers} writers to build a story together!`}
                     </p>
                   </div>
 
