@@ -167,7 +167,7 @@ const screens = [
     ), notes: "Personal proof of the Zoox reframe. The thing on screen is itself a live, non-deterministic system. For this room: don't ask 'how do we buy AI?' Ask what job we're actually trying to do." },
 
   { id: "L-S3a", title: "One-Word Story — Cast Call", component: OneWordStoryCastCallScreen,
-    notes: "Hand-raised cast call. Live, non-deterministic system in action." },
+    notes: "Virtual cast call. Drop the join link in the chat; the lottery picks 3 writers at random. Quiet room? Skip ahead and play all the parts yourself — same demo, no waiting." },
 
   { id: "LD1.92", title: "How AI Predicts — Word by Word", component: LLMExplainerScreen,
     notes: "Auto-playing visualization. Top-4 candidates per step with probabilities. The model isn't looking anything up — it's picking the next word from a distribution. Press P to pause." },
@@ -176,7 +176,7 @@ const screens = [
     notes: "Second live system. A question with a real answer — the answers will still surprise us." },
 
   { id: "LD1.85", title: "Live Estimate — Audience + AI", component: ElephantEstimateScreen,
-    notes: "Type guesses from the room as people shout numbers. AI models stream their estimates in parallel. Number-line shows the spread." },
+    notes: "AI models stream their estimates in parallel automatically. Type guesses as people drop them in the chat. Number-line shows the spread. No audience? The AI numbers alone still make the point." },
 
   { id: "L-S3a2b", title: "Everything Is a Hallucination", component: HallucinationRevealScreen,
     notes: "Banerjee 2024 + OpenAI Kalai 2025. Reframe: 'how would I know?'" },
@@ -185,13 +185,13 @@ const screens = [
     notes: "Anthropic's explainer on probabilistic AI. Treat outputs as drafts to coach, not finished truth." },
 
   { id: "A1-3b", title: "Probability Words — Cycling", component: ProbabilityWordsPollScreen,
-    notes: "Phrases cycle on screen. Ask the room to call out the % they hear for each one. The spread in the room IS the point — and it's the same spread that lives inside a risk email from a vendor." },
+    notes: "Phrases cycle on screen. Ask people to drop the % they hear in the chat for each one. The spread in the chat IS the point — and it's the same spread that lives inside a risk email from a vendor." },
 
   { id: "A1-3c", title: "Annie Duke — Same Words, Different Meanings", component: AnnieDukeStudyScreen,
     notes: "CIA's Sherman Kent 1964 + Mauboussin/Duke replication. 'Serious possibility' = 20% to 80%." },
 
   { id: "A1-3d", title: "Same Words — Live AI", component: ProbabilityWordsLiveScreen,
-    notes: "Live receipts. Press the button to ask GPT, Claude, Perplexity, and Gemini the same phrases in real time. Four models, four different numbers — the same spread you just saw in the room." },
+    notes: "Live receipts. Press the button to ask GPT, Claude, Perplexity, and Gemini the same phrases in real time. Four models, four different numbers — the same spread you just saw in the chat." },
 
   { id: "L-S3a3b", title: "Language IS the Technology", component: LanguageIsTheTechSlide,
     notes: "LEGACY. Bridge out of Annie Duke." },
@@ -324,7 +324,7 @@ const screens = [
     ), notes: "Deciding is what happens at the end of a meeting. Directing is what happens during the scene." },
 
   { id: "A3-3-1b", title: "The Script — Demo", component: ScriptDemoSlide,
-    notes: "Live demo. Read the six lines flat. Then ask volunteers to play it: lovers reuniting, a mugging, a job interview, a breakup. Same words, different scene — that's directing." },
+    notes: "Live demo. Read the six lines flat. Then play it yourself (or take a volunteer from the chat) as: lovers reuniting, a mugging, a job interview, a breakup. Same words, different scene — that's directing." },
 
   { id: "A3-3-2", title: "Stanislavski — Need / Obstacle / Action", component: StanislavskiSlide,
     notes: "Required reading at Juilliard, RADA, Yale Drama. Most leaders only name the outcome. The want and the action are where the work lives." },

@@ -166,7 +166,7 @@ export const ElephantEstimateScreen = () => {
               window.dispatchEvent(new KeyboardEvent("keydown", { key: e.key, bubbles: true }));
             }
           }}
-          placeholder="Type a guess from the room…"
+          placeholder="Type a guess from the chat…"
           inputMode="numeric"
           aria-label="Audience guess"
           autoFocus

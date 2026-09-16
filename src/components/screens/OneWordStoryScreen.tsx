@@ -516,10 +516,10 @@ export const OneWordStoryScreen = () => {
           </span>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-          Who's Brave Enough?
+          Who&rsquo;s In?
         </h1>
         <p className="text-base md:text-lg text-muted-foreground mt-3 max-w-2xl mx-auto">
-          We need a few volunteers on stage. The lottery picks who writes — everyone else gets to watch the story unfold.
+          Drop the join link in the chat — anyone who opts in goes into the lottery. The lottery picks who writes; everyone else watches the story unfold. Quiet room? Skip ahead and play all the parts yourself.
         </p>
       </div>
 
@@ -558,12 +558,12 @@ export const OneWordStoryScreen = () => {
                 <>
                   <div className="bg-gradient-to-br from-secondary/20 to-primary/10 border-2 border-secondary/40 rounded-2xl p-6 text-center">
                     <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                      ✋ Who's Volunteering?
+                      ✋ Who&rsquo;s In the Lottery?
                     </h2>
                     <p className="text-muted-foreground">
                       {lotteryMode
-                        ? `Anyone can volunteer — we'll randomly pick ${PICK_COUNT} writers.`
-                        : `We need ${gameState.max_volunteers} brave souls to write a story together!`}
+                        ? `Share the join link in the chat — we'll randomly pick ${PICK_COUNT} writers from everyone who opts in.`
+                        : `We need ${gameState.max_volunteers} writers to build a story together!`}
                     </p>
                   </div>
 
@@ -631,8 +631,20 @@ export const OneWordStoryScreen = () => {
                         </div>
                       </div>
 
-                      <div className="text-center text-sm text-muted-foreground">
-                        Ask the room for 3 brave volunteers, then continue →
+                      <div className="text-center space-y-3">
+                        <p className="text-sm text-muted-foreground">
+                          Drop the join link in the chat, let people opt in, then pick →
+                        </p>
+                        <div className="flex justify-center gap-2">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() => advanceStage('writing')}
+                          >
+                            <ChevronRight className="h-4 w-4 mr-1" />
+                            Skip — I&rsquo;ll play all the parts
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   ) : (
@@ -660,7 +672,7 @@ export const OneWordStoryScreen = () => {
                               <p className="text-sm text-muted-foreground">
                                 {candidates.length}{" "}
                                 {candidates.length === 1 ? "person" : "people"}{" "}
-                                volunteered so far. Hang tight — random pick coming.
+                                in the lottery so far. Hang tight — random pick coming.
                               </p>
                             </div>
                           ) : pickedVolunteers.length > 0 ? (
