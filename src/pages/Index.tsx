@@ -63,7 +63,7 @@ import { LanguageSwitchesValuesSlide } from "@/components/screens/sol/LanguageSw
 import { PhotographySmartphoneSlide } from "@/components/screens/sol/PhotographySmartphoneSlide";
 import { BirkmanMyResultsScreen } from "@/components/screens/BirkmanMyResultsScreen";
 
-// New scenes built for AI at the Speed of Live
+// Core presentation scenes
 import { ActTitleCard } from "@/components/screens/sol/ActTitleCard";
 import { RussianBluesClaimSlide } from "@/components/screens/sol/RussianBluesClaimSlide";
 
@@ -93,7 +93,7 @@ import { SimpleTextSlide } from "@/components/screens/sol/SimpleTextSlide";
 import { TrainedOnLanguageSlide } from "@/components/screens/sol/TrainedOnLanguageSlide";
 import { UzziQScoreSlide, UzziHowMeasuredSlide, UzziReplicationSlide } from "@/components/screens/sol/UzziQScoreSlide";
 
-// WSHMMA — healthcare supply chain
+// Research scenes retained from earlier presentations
 
 
 import { ProcurementAdoptionSlide } from "@/components/screens/wshmma/ProcurementAdoptionSlide";
