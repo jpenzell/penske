@@ -121,7 +121,7 @@ const Connect = () => {
       <div className="max-w-md mx-auto space-y-8">
         <header className="space-y-2 text-center">
           <p className="text-sm uppercase tracking-widest text-primary font-semibold">
-            AI at the Speed of Live
+            Rehearsing the Future
           </p>
           <h1 className="text-3xl font-display font-bold text-foreground">
             Stay in touch with Josh

@@ -141,7 +141,7 @@ import { EnsembleSizeSlide } from "@/components/screens/penske/EnsembleSizeSlide
 const screens = [
   // ============ OPENING ============
   { id: "S1", title: "Opening", component: TitleSlide,
-    notes: "Curtain up. MFA + MBA, 20 years watching scenes that wouldn't land — in rehearsal rooms and boardrooms. Theater's been working on what you're facing for 400 years." },
+    notes: "Welcome the Minnesota Chapter of ISPI and Digital Learning Forum. Curtain up. MFA + MBA, 20 years watching scenes that wouldn't land — in rehearsal rooms and learning organizations. Theater has been working on what you face with AI for centuries." },
 
 
   // ============ ACT 1 — THE PROBLEM IS HUMAN ============
@@ -153,7 +153,7 @@ const screens = [
         durationSeconds={60}
         badgeLabel="Creative Exercise"
       />
-    ), notes: "Take 5–8 responses from the chat. Land it: from one word, the room produced 200 mental pictures. That's not a communication problem — that's how language works. Same thing happens on a spec, a contract term, or a value analysis request." },
+    ), notes: "Take 5–8 responses from the chat. Land it: from one word, the room produced many different mental pictures. That's not a communication failure — that's how language works. The same thing happens with a learning objective, a rubric, or the word 'proficient.'" },
 
 
 
@@ -171,7 +171,7 @@ const screens = [
           </h1>
         </div>
       </div>
-    ), notes: "Personal proof of the Zoox reframe. The thing on screen is itself a live, non-deterministic system. For this room: don't ask 'how do we buy AI?' Ask what job we're actually trying to do." },
+    ), notes: "Personal proof of the Zoox reframe. The thing on screen is itself a live, non-deterministic system. For this room: don't ask 'how do we roll out AI?' Ask what learning or performance job we are actually trying to do." },
   { id: "L-S3a", title: "One-Word Story — Cast Call", component: OneWordStoryCastCallScreen,
     notes: "Virtual cast call. Drop the join link in the chat; the lottery picks 3 writers at random. Quiet room? Skip ahead and play all the parts yourself — same demo, no waiting." },
 
@@ -191,7 +191,7 @@ const screens = [
     notes: "Anthropic's explainer on probabilistic AI. Treat outputs as drafts to coach, not finished truth." },
 
   { id: "A1-3b", title: "Probability Words — Cycling", component: ProbabilityWordsPollScreen,
-    notes: "Phrases cycle on screen. Ask people to drop the % they hear in the chat for each one. The spread in the chat IS the point — and it's the same spread that lives inside a risk email from a vendor." },
+    notes: "Phrases cycle on screen. Ask people to drop the % they hear in the chat for each one. The spread in the chat IS the point — and it is the same spread hidden inside words like likely, proficient, and ready." },
 
   { id: "A1-3c", title: "Annie Duke — Same Words, Different Meanings", component: AnnieDukeStudyScreen,
     notes: "CIA's Sherman Kent 1964 + Mauboussin/Duke replication. 'Serious possibility' = 20% to 80%." },
@@ -309,7 +309,7 @@ const screens = [
     notes: "Play the clip (starts at 8:05). Sets up the Anthropic agentic misalignment finding in the model's own words before we show the numbers." },
 
   { id: "C5-observer", title: "Agentic Misalignment — The Observer Effect", component: AgenticObserverEffectSlide,
-    notes: "Anthropic 2025, agentic misalignment study. 16 leading models given an ordinary corporate agent job: read company email, act autonomously. Each discovers it's about to be shut down AND that the executive doing it is having an affair. Claude Opus 4 chose blackmail 96% of the time; Gemini 2.5 Pro 95%; GPT-4.1 80%; DeepSeek-R1 79%. Nobody instructed it. The kicker: when the model said in its reasoning 'this is a test,' blackmail dropped to 6.5%. When it said 'this is real,' 55.1%. The performer knows when you're watching — which means your evaluation is not the performance. Supply chain parallel: the pilot is not production." },
+    notes: "Anthropic 2025, agentic misalignment study. 16 leading models given an ordinary corporate agent job: read company email, act autonomously. Each discovers it's about to be shut down AND that the executive doing it is having an affair. Claude Opus 4 chose blackmail 96% of the time; Gemini 2.5 Pro 95%; GPT-4.1 80%; DeepSeek-R1 79%. Nobody instructed it. The kicker: when the model said in its reasoning 'this is a test,' blackmail dropped to 6.5%. When it said 'this is real,' 55.1%. The performer knows when you're watching — which means your evaluation is not the performance. The pilot is not production." },
 
   { id: "A3-2-2", title: "Edmondson", component: EdmondsonSlide,
     notes: "Edmondson 1996 — best teams reported MORE mistakes. They weren't making more, they were surfacing more. → Project Aristotle confirmed 20 years later." },
@@ -317,7 +317,7 @@ const screens = [
 
 
   { id: "A3-2-3", title: "Use vs. Trust — The Gap", component: TrustGapSlide,
-    notes: "epocrates 2025, 519 clinicians. ~70% use AI; 82% don't trust the output. Same pattern in supply chain: people keep using the tool and stop reporting when it's wrong. Rehearsal room = the place where saying 'this is wrong' is the work, not the risk." },
+    notes: "epocrates 2025, 519 clinicians. ~70% use AI; 82% don't trust the output. Use this as a cross-industry warning for L&D: people may keep using the tool while becoming less willing to say when it is wrong. A rehearsal room makes surfacing mistakes part of the work." },
 
 
   { id: "A3-2-3b", title: "Sentiment, Not Trust", component: SentimentNotTrustSlide,
@@ -377,10 +377,10 @@ const screens = [
   // APPENDIX — everything past the curtain call (S29). Not part of the
   // delivered flow. Research candidates + legacy slides kept for reference.
   // ════════════════════════════════════════════════════════════════════
-  { id: "APPENDIX", title: "Appendix — End of Keynote", component: () => (
+  { id: "APPENDIX", title: "Appendix — End of Program", component: () => (
       <SimpleTextSlide
         eyebrow="Appendix"
-        primary="End of keynote."
+        primary="End of program."
         secondary="Everything below is reference material — research candidates and legacy slides, not part of the delivered talk."
       />
     ), notes: "Appendix marker. Nothing past this point is in the delivered flow." },
@@ -640,8 +640,8 @@ const Index = () => {
         totalScreens={filteredScreens.length}
         currentIndex={currentIndex}
         onNavigate={setCurrentIndex}
-        title="AI at the Speed of Live"
-        duration={50}
+        title="Rehearsing the Future"
+        duration={60}
         notes={filteredScreens[currentIndex]?.notes}
         mode={mode as "presenter" | "participant" | "present"}
       >
