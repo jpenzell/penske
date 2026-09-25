@@ -6,66 +6,46 @@ const CAST = [
   {
     role: "AI plays",
     tone: "muted" as const,
-    items: [
-      "First-draft scenario branches and distractors",
-      "Rewriting an SME brain-dump into plain language",
-      "Variants: same objective, five audiences",
-      "Summarizing evaluation comments and survey text",
-      "Job aids, checklists, knowledge-check banks",
-    ],
+    items: ["First drafts & branches", "Plain-language rewrites", "Audience variants", "Job aids & question banks"],
   },
   {
     role: "Humans hold",
     tone: "primary" as const,
-    items: [
-      "The learning objective and why it matters here",
-      "What good actually looks like in the learner's real work",
-      "Voice, safety language, and compliance judgment",
-      "The moment of difficulty the learner must feel",
-      "The final yes — nothing ships unheard",
-    ],
+    items: ["The performance goal", "What good looks like", "Voice & judgment", "The final yes"],
   },
 ];
 
 export const LearningHandoffsSlide = () => (
-  <div className="flex-1 flex flex-col items-center justify-center animate-fade-in px-10 py-8">
-    <div className="w-full max-w-6xl space-y-7">
-      <div className="text-center space-y-2">
+  <div className="flex-1 flex flex-col items-center justify-center animate-fade-in px-16 py-10">
+    <div className="w-full max-w-[1600px] space-y-10">
+      <div className="text-center space-y-3">
         <div className="slide-kicker text-secondary font-bold tracking-[0.25em]">
-          Casting the learning-design workflow
+          Casting the learning workflow
         </div>
-        <h1 className="slide-subtitle font-display font-bold text-foreground">
-          Cast AI in the roles it can actually play.
+        <h1 className="slide-title font-display font-bold text-foreground">
+          Cast AI in roles it can play.
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-10">
         {CAST.map((col) => (
           <div
             key={col.role}
-            className={`rounded-2xl p-7 space-y-4 border-2 ${
-              col.tone === "primary"
-                ? "bg-primary/5 border-primary"
-                : "bg-card border-border"
+            className={`rounded-3xl p-10 space-y-6 border-2 ${
+              col.tone === "primary" ? "bg-primary/5 border-primary" : "bg-card border-border"
             }`}
           >
             <div
-              className={`slide-kicker font-bold ${
+              className={`slide-body font-bold uppercase tracking-[0.2em] ${
                 col.tone === "primary" ? "text-primary" : "text-foreground/60"
               }`}
             >
               {col.role}
             </div>
-            <ul className="space-y-2 text-left">
+            <ul className="space-y-4 text-left">
               {col.items.map((i) => (
-                <li key={i} className="slide-caption text-foreground/85 flex gap-3">
-                  <span
-                    className={
-                      col.tone === "primary" ? "text-primary" : "text-foreground/40"
-                    }
-                  >
-                    ▸
-                  </span>
+                <li key={i} className="slide-body text-foreground flex gap-4">
+                  <span className={col.tone === "primary" ? "text-primary" : "text-foreground/40"}>▸</span>
                   <span>{i}</span>
                 </li>
               ))}
@@ -74,10 +54,9 @@ export const LearningHandoffsSlide = () => (
         ))}
       </div>
 
-      <p className="slide-body text-center text-foreground/85 max-w-5xl mx-auto">
-        The handoff rule: AI drafts <span className="italic">volume</span>, humans own{" "}
-        <span className="italic">intent</span> — and every handoff back to a human comes with the
-        note that says what to listen for.
+      <p className="slide-subtitle font-display text-center text-foreground">
+        AI drafts <span className="italic text-secondary">volume</span>. Humans own{" "}
+        <span className="italic text-primary">intent</span>.
       </p>
     </div>
   </div>
