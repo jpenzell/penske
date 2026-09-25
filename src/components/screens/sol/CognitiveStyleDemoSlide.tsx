@@ -14,16 +14,16 @@ export const CognitiveStyleDemoSlide = () => (
         variant="split"
         panelA={{
           label: "No role",
-          prompt: "A key supplier just delayed delivery by three weeks. What's the first thing we should do?",
+          prompt: "A new training program has low completion after three weeks. What's the first thing we should do?",
           cached:
-            "Confirm the new timeline, assess the impact on current orders, and line up alternate sources.",
+            "Review the completion data, send reminders, and ask managers to reinforce the deadline.",
         }}
         panelB={{
           label: "With a role",
           prompt:
-            "As a VP of Supply Chain focused on long-term partnerships, a key supplier just delayed delivery by three weeks. What's the first thing we should do?",
+            "As an L&D leader focused on learner performance, a new training program has low completion after three weeks. What's the first thing we should do?",
           cached:
-            "Call their leadership, find the root cause, and build a joint recovery plan.",
+            "Talk with learners and managers, find the barrier in the workflow, and redesign the experience around the moment of need.",
         }}
       />
 

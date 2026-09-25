@@ -63,7 +63,7 @@ export const PresentationLayout = ({
   type PresTheme = "default" | "high-contrast" | "dark" | "colorblind";
   const THEMES: { id: PresTheme; label: string; hint: string }[] = [
     { id: "default", label: "Light room", hint: "Dark ink on white — projector default" },
-    { id: "dark", label: "Dark keynote", hint: "Deep purple stage — dark rooms only" },
+    { id: "dark", label: "Dark stage", hint: "Deep navy stage — dark rooms only" },
     { id: "high-contrast", label: "High contrast", hint: "Black + yellow — washed-out projectors" },
     { id: "colorblind", label: "Colorblind-safe", hint: "Blue + orange (Wong palette)" },
   ];

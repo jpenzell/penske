@@ -1,77 +1,47 @@
-import { useState } from "react";
-import { Copy, Check, Users, Sparkles } from "lucide-react";
-import { QRCodeSVG } from "qrcode.react";
+import { Sparkles } from "lucide-react";
 import { useSession } from "@/contexts/SessionContext";
 import { usePresentationMode } from "@/contexts/PresentationModeContext";
-import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
-import { getPublicOrigin } from "@/lib/publicUrl";
 
 export const TitleSlide = () => {
-  const { session, isParticipant, participantCount } = useSession();
+  const { isParticipant } = useSession();
   const { presenterName, presenterCompany, eventName } = usePresentationMode();
-  const [copied, setCopied] = useState(false);
-
-  const joinUrl = session
-    ? `${getPublicOrigin()}/?join=${session.code}`
-    : "";
-
-  const copyToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText(joinUrl);
-      setCopied(true);
-      toast.success("Link copied!");
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      toast.error("Failed to copy");
-    }
-  };
 
   return (
     <div className="flex-1 flex items-center justify-center animate-fade-in relative overflow-hidden min-h-0 bg-iqa-hero">
-      {/* Event wordmark — top right */}
       <div className="absolute top-8 right-8 md:top-12 md:right-14 z-20 text-right leading-tight">
-        <p className="slide-body font-display font-black text-primary tracking-[0.18em]">
-          PENSKE
+        <p className="slide-body font-display font-black text-primary tracking-[0.14em]">
+          ISPI
         </p>
-        <p className="font-display text-foreground/70 text-sm md:text-base tracking-[0.22em] uppercase">
-          Keynote 2026
+        <p className="slide-chrome font-display text-foreground/70 tracking-[0.12em] uppercase">
+          Minnesota Chapter
         </p>
-
       </div>
 
-
-      {/* Content */}
       <div
-        className="relative z-10 w-full mx-auto px-12 md:px-20 flex flex-col items-center justify-center text-center gap-8 pt-16"
+        className="relative z-10 w-full mx-auto px-12 md:px-20 flex flex-col items-center justify-center text-center gap-7 pt-14"
         style={{ WebkitFontSmoothing: "antialiased" }}
       >
-        {/* Event badge */}
-        <div className="inline-flex items-center gap-3 px-5 py-2 bg-foreground/10 rounded-full border border-spotlight/40 backdrop-blur-sm">
+        <div className="inline-flex items-center gap-3 px-5 py-2 bg-primary/5 rounded-full border border-primary/20">
           <Sparkles className="h-5 w-5 text-spotlight" />
-          <span className="slide-caption text-foreground text-base font-body tracking-[0.2em] uppercase">
+          <span className="slide-caption text-primary font-body tracking-[0.12em] uppercase">
             {eventName}
           </span>
         </div>
 
-        {/* Main title */}
-        <h1 className="font-display font-bold leading-[0.9] tracking-tight uppercase">
-          <span className="slide-title block text-foreground font-light normal-case italic font-serif">AI at the</span>
-          <span className="slide-title-lg block md:text-[9rem] -mt-2 text-primary">
-            Speed of
+        <h1 className="font-display font-bold leading-none max-w-7xl">
+          <span className="slide-title-lg block text-primary">
+            Rehearsing the Future
           </span>
-          <span className="slide-title-lg block md:text-[9rem] -mt-4 text-foreground">
-            Live<span className="text-primary">.</span>
+          <span className="slide-subtitle block mt-5 text-foreground font-medium">
+            Directing the Future of Training<br />in the Age of AI
           </span>
         </h1>
 
-        {/* Subtitle */}
-        <p className="slide-body-lg text-foreground/90 font-light max-w-5xl tracking-tight">
-          How to lead your digital ensemble — directing AI, not prompting it
+        <p className="slide-caption text-foreground/65 uppercase tracking-[0.12em]">
+          Online program · September 25, 2026 · 12:00–1:00 p.m. CST
         </p>
 
-        {/* Presenter */}
-        <div className="flex flex-col items-center gap-1 pt-4">
+        <div className="flex flex-col items-center gap-1 pt-2">
           <span className="slide-chrome uppercase tracking-[0.3em] text-foreground/50">Director</span>
           <span className="slide-body text-foreground font-semibold font-display">{presenterName}</span>
           <span className="slide-caption text-foreground/60">{presenterCompany}</span>

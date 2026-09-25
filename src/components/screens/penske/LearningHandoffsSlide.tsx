@@ -19,7 +19,7 @@ const CAST = [
     tone: "primary" as const,
     items: [
       "The learning objective and why it matters here",
-      "What good actually looks like on a real Penske site",
+      "What good actually looks like in the learner's real work",
       "Voice, safety language, and compliance judgment",
       "The moment of difficulty the learner must feel",
       "The final yes — nothing ships unheard",

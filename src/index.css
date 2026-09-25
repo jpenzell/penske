@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Penske Design System — Penske red, graphite, and truck-yellow spotlight
+/* Minnesota ISPI / Digital Learning Forum — navy, gold, and projector white
    All colors MUST be HSL.
 */
 
@@ -10,45 +10,45 @@
   :root {
     /* Projector-first LIGHT theme: dark ink on a bright, near-white stage. */
     --background: 220 14% 98%;
-    --foreground: 220 15% 10%;
+    --foreground: 220 50% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 10%;
+    --card-foreground: 220 50% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 10%;
+    --popover-foreground: 220 50% 12%;
 
-    --primary: 355 82% 45%;
+    --primary: 220 100% 24%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 12% 24%;
+    --secondary: 43 100% 32%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 14% 94%;
-    --muted-foreground: 220 10% 34%;
+    --muted-foreground: 220 24% 34%;
 
-    --accent: 42 96% 36%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 48 100% 45%;
+    --accent-foreground: 220 50% 12%;
 
     --destructive: 0 78% 44%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 12% 84%;
     --input: 220 12% 93%;
-    --ring: 355 82% 45%;
+    --ring: 220 100% 24%;
 
     --radius: 0.875rem;
 
     --curtain: 220 14% 97%;
-    --curtain-foreground: 220 15% 10%;
-    --spotlight: 42 96% 36%;
+    --curtain-foreground: 220 50% 12%;
+    --spotlight: 48 100% 50%;
 
-    --gradient-hero: radial-gradient(ellipse at 30% 30%, hsl(355 85% 52% / 0.10) 0%, transparent 55%),
-      radial-gradient(ellipse at 75% 60%, hsl(220 10% 45% / 0.08) 0%, transparent 55%),
+    --gradient-hero: radial-gradient(ellipse at 30% 30%, hsl(48 100% 50% / 0.14) 0%, transparent 55%),
+      radial-gradient(ellipse at 75% 60%, hsl(220 100% 24% / 0.10) 0%, transparent 55%),
       linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 14% 95%) 100%);
 
-    --gradient-primary: linear-gradient(135deg, hsl(355 82% 45%) 0%, hsl(220 14% 22%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(355 82% 47%) 0%, hsl(42 96% 42%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(220 100% 24%) 0%, hsl(220 50% 12%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(220 100% 24%) 0%, hsl(48 100% 50%) 100%);
 
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 95%) 100%);
     --gradient-curtain: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 94%) 100%);
@@ -60,63 +60,63 @@
 
     --sidebar-background: 220 14% 97%;
     --sidebar-foreground: 220 15% 12%;
-    --sidebar-primary: 355 82% 45%;
+    --sidebar-primary: 220 100% 24%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 220 14% 92%;
     --sidebar-accent-foreground: 220 15% 12%;
     --sidebar-border: 220 12% 86%;
-    --sidebar-ring: 355 82% 45%;
+    --sidebar-ring: 220 100% 24%;
   }
 
   /* Keep .dark as an alias for consistency; the deck is light-first. */
   .dark {
     --background: 220 14% 98%;
-    --foreground: 220 15% 10%;
+    --foreground: 220 50% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 10%;
+    --card-foreground: 220 50% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 10%;
+    --popover-foreground: 220 50% 12%;
 
-    --primary: 355 82% 45%;
+    --primary: 220 100% 24%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 12% 24%;
+    --secondary: 43 100% 32%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 14% 94%;
-    --muted-foreground: 220 10% 34%;
+    --muted-foreground: 220 24% 34%;
 
-    --accent: 42 96% 36%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 48 100% 45%;
+    --accent-foreground: 220 50% 12%;
 
     --destructive: 0 78% 44%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 12% 84%;
     --input: 220 12% 93%;
-    --ring: 355 82% 45%;
+    --ring: 220 100% 24%;
 
     --curtain: 220 14% 97%;
-    --curtain-foreground: 220 15% 10%;
-    --spotlight: 42 96% 36%;
+    --curtain-foreground: 220 50% 12%;
+    --spotlight: 48 100% 50%;
 
-    --gradient-hero: radial-gradient(ellipse at 30% 30%, hsl(355 85% 52% / 0.10) 0%, transparent 55%),
-      radial-gradient(ellipse at 75% 60%, hsl(220 10% 45% / 0.08) 0%, transparent 55%),
+    --gradient-hero: radial-gradient(ellipse at 30% 30%, hsl(48 100% 50% / 0.14) 0%, transparent 55%),
+      radial-gradient(ellipse at 75% 60%, hsl(220 100% 24% / 0.10) 0%, transparent 55%),
       linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 14% 95%) 100%);
 
-    --gradient-primary: linear-gradient(135deg, hsl(355 82% 45%) 0%, hsl(220 14% 22%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(355 82% 47%) 0%, hsl(42 96% 42%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(220 100% 24%) 0%, hsl(220 50% 12%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(220 100% 24%) 0%, hsl(48 100% 50%) 100%);
 
     --sidebar-background: 220 14% 97%;
     --sidebar-foreground: 220 15% 12%;
-    --sidebar-primary: 355 82% 45%;
+    --sidebar-primary: 220 100% 24%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 220 14% 92%;
     --sidebar-accent-foreground: 220 15% 12%;
     --sidebar-border: 220 12% 86%;
-    --sidebar-ring: 355 82% 45%;
+    --sidebar-ring: 220 100% 24%;
   }
 }
 
@@ -245,8 +245,8 @@
   /* Curtain background utility — bright-room / projector tuned */
   .bg-curtain {
     background:
-      radial-gradient(ellipse at 30% 30%, hsl(355 85% 52% / 0.10) 0%, transparent 55%),
-      radial-gradient(ellipse at 75% 60%, hsl(220 10% 45% / 0.08) 0%, transparent 55%),
+      radial-gradient(ellipse at 30% 30%, hsl(48 100% 50% / 0.14) 0%, transparent 55%),
+      radial-gradient(ellipse at 75% 60%, hsl(220 100% 24% / 0.10) 0%, transparent 55%),
       radial-gradient(ellipse at 60% 95%, hsl(220 14% 45% / 0.07) 0%, transparent 55%),
       linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 14% 95%) 100%);
   }
@@ -254,8 +254,8 @@
   /* Hero gradient (use directly on full-bleed sections) */
   .bg-iqa-hero {
     background:
-      radial-gradient(ellipse at 30% 30%, hsl(355 85% 52% / 0.12) 0%, transparent 55%),
-      radial-gradient(ellipse at 75% 60%, hsl(220 10% 45% / 0.10) 0%, transparent 55%),
+      radial-gradient(ellipse at 30% 30%, hsl(48 100% 50% / 0.16) 0%, transparent 55%),
+      radial-gradient(ellipse at 75% 60%, hsl(220 100% 24% / 0.12) 0%, transparent 55%),
       radial-gradient(ellipse at 60% 95%, hsl(220 14% 45% / 0.08) 0%, transparent 55%),
       linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 14% 94%) 100%);
   }
@@ -396,7 +396,7 @@
 
 /* ─── Presentation accessibility themes ─────────────────────────────────────
    Toggleable via the palette button in the presenter chrome (or `t` key).
-   Each theme overrides the design-system HSL tokens AND the radial gradient
+     Each theme overrides the design-system HSL tokens AND the radial gradient
    utilities used as slide backgrounds, so washed-out projectors, bright
    rooms, and color-vision-deficient viewers all get a readable picture.
    ────────────────────────────────────────────────────────────────────────── */
@@ -432,7 +432,7 @@
   background: #000 !important;
 }
 
-/* Dark keynote — the original deep-purple stage, for dark rooms. */
+/* Dark stage — deep navy and gold for dark rooms. */
 :root[data-pres-theme="dark"],
 .dark[data-pres-theme="dark"] {
   --background: 220 20% 5%;
@@ -441,29 +441,29 @@
   --card-foreground: 0 0% 100%;
   --popover: 220 18% 11%;
   --popover-foreground: 0 0% 100%;
-  --primary: 355 90% 66%;
+  --primary: 48 100% 55%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 275 90% 78%;
+  --secondary: 207 100% 72%;
   --secondary-foreground: 0 0% 100%;
   --muted: 220 14% 20%;
   --muted-foreground: 220 12% 90%;
-  --accent: 350 95% 75%;
+  --accent: 48 100% 55%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 85% 65%;
   --destructive-foreground: 0 0% 100%;
   --border: 220 16% 32%;
   --input: 220 16% 18%;
-  --ring: 355 90% 66%;
+  --ring: 48 100% 55%;
   --curtain: 220 24% 12%;
   --curtain-foreground: 0 0% 100%;
-  --spotlight: 25 100% 68%;
+  --spotlight: 48 100% 55%;
 }
 [data-pres-theme="dark"] .bg-curtain,
 [data-pres-theme="dark"] .bg-iqa-hero {
   background:
-    radial-gradient(ellipse at 30% 30%, hsl(355 75% 34% / 0.38) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 60%, hsl(220 14% 35% / 0.30) 0%, transparent 55%),
-    radial-gradient(ellipse at 60% 95%, hsl(42 96% 42% / 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 30% 30%, hsl(220 100% 24% / 0.55) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, hsl(48 100% 45% / 0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at 60% 95%, hsl(207 100% 55% / 0.16) 0%, transparent 50%),
     linear-gradient(135deg, hsl(220 22% 6%) 0%, hsl(220 20% 2%) 100%) !important;
 }
 
@@ -531,15 +531,15 @@
    don't declare their own full-bleed background stay readable on a projector. */
 .slide-content {
   background:
-    radial-gradient(ellipse at 30% 30%, hsl(355 85% 52% / 0.10) 0%, transparent 55%),
-    radial-gradient(ellipse at 75% 60%, hsl(220 10% 45% / 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at 30% 30%, hsl(48 100% 50% / 0.14) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 60%, hsl(220 100% 24% / 0.10) 0%, transparent 55%),
     linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 14% 95%) 100%);
   color: hsl(var(--foreground));
 }
 [data-pres-theme="dark"] .slide-content {
   background:
-    radial-gradient(ellipse at 30% 30%, hsl(355 75% 34% / 0.38) 0%, transparent 50%),
-    radial-gradient(ellipse at 75% 60%, hsl(220 14% 35% / 0.30) 0%, transparent 55%),
+    radial-gradient(ellipse at 30% 30%, hsl(220 100% 24% / 0.55) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, hsl(48 100% 45% / 0.22) 0%, transparent 55%),
     linear-gradient(135deg, hsl(220 22% 6%) 0%, hsl(220 20% 2%) 100%);
 }
 [data-pres-theme="high-contrast"] .slide-content { background: #000; }

@@ -24,6 +24,9 @@ export const FinalSlide = () => {
             <p className="slide-body text-white/90 drop-shadow-[0_2px_18px_rgba(0,0,0,0.7)]">
               Josh Penzell · Imagination Applied
             </p>
+            <p className="slide-caption text-white/65 uppercase tracking-[0.12em]">
+              Minnesota Chapter of ISPI · Digital Learning Forum
+            </p>
           </div>
 
           {/* Right: QR card */}
