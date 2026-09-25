@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Sparkles } from "lucide-react";
 import { useSession } from "@/contexts/SessionContext";
 import { usePresentationMode } from "@/contexts/PresentationModeContext";
