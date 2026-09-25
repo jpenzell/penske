@@ -63,16 +63,16 @@ const Connect = () => {
       linkedin_clicked: linkedinClicked,
       user_agent: navigator.userAgent,
     });
-    setSubmitting(false);
-
     if (error) {
+      setSubmitting(false);
       console.error("connect insert failed", error);
       toast.error("Something went wrong. Try again?");
       return;
     }
 
-    supabase.functions
-      .invoke("send-connect-notification", {
+    const { error: notifyError } = await supabase.functions.invoke(
+      "send-connect-notification",
+      {
         body: {
           idempotencyKey: `connect-${submissionId}`,
           name: name.trim() || null,
@@ -84,8 +84,16 @@ const Connect = () => {
           submittedAt,
           userAgent: navigator.userAgent,
         },
-      })
-      .catch((err) => console.error("notify failed", err));
+      },
+    );
+
+    setSubmitting(false);
+
+    if (notifyError) {
+      console.error("notify failed", notifyError);
+      toast.error("Your details were saved, but the notification failed. Please try again.");
+      return;
+    }
 
     setSubmitted(true);
   };

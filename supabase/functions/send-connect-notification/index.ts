@@ -15,7 +15,7 @@ const corsHeaders = {
 }
 
 const RECIPIENT = 'josh@joshpenzell.com'
-const FROM = 'AI at the Speed of Live <noreply@notify.joshpenzell.com>'
+const FROM = 'Rehearsing the Future <noreply@notify.joshpenzell.com>'
 const SENDER_DOMAIN = 'notify.joshpenzell.com'
 const TEMPLATE_NAME = 'new-connect-submission'
 
@@ -88,12 +88,12 @@ Deno.serve(async (req) => {
         html,
         text,
         purpose: 'transactional',
+        idempotency_key: trim(body.idempotencyKey, 120) ?? crypto.randomUUID(),
         label: TEMPLATE_NAME,
       },
       {
         apiKey,
         sendUrl: Deno.env.get('LOVABLE_SEND_URL'),
-        idempotencyKey: trim(body.idempotencyKey, 120) ?? undefined,
       },
     )
   } catch (err) {
