@@ -1,26 +1,19 @@
-I’ll make this a deck-wide typography/layout pass, not a one-slide patch.
+# Rebrand today’s presentation for Minnesota ISPI / Digital Learning Forum
 
-## Plan
+## What will change
+- Replace Penske branding throughout the live presentation with the Minnesota Chapter of ISPI / Digital Learning Forum identity from the flyer.
+- Use the flyer’s exact session title: **“Rehearsing the Future: Directing the Future of Training in the Age of AI.”**
+- Update the opening slide with today’s date, the online program context, Josh Penzell, and Imagination Applied.
+- Shift the presentation palette from Penske red to the flyer’s navy-and-gold visual language while preserving the existing theatrical presentation style and readability.
+- Remove remaining active Penske, procurement, supply-chain, and vendor-specific wording; rewrite those moments for a broad L&D/training audience.
+- Update the closing/connect experience and browser/share metadata to match the ISPI event.
+- Set the presentation timer to the flyer’s 60-minute program length.
 
-1. **Fix slide 6/87 directly**
-   - Update the Annie Duke probability table so headers like “Human Range” and “ChatGPT” use a table/chrome-sized semantic style instead of full body-size text.
-   - Adjust column widths, padding, and row height so table labels do not squeeze or overlap in fullscreen/projector mode.
+## Content alignment
+- Keep the current Cast → Rehearse → Direct structure, live chat exercises, research slides, demos, and appendix.
+- Align speaker notes and examples with the flyer’s stated outcomes: fear and fatigue, rigor and voice, coaching curiosity, and directing rather than deploying.
+- Preserve the QR destination and current connection workflow.
 
-2. **Standardize the deck typography system**
-   - Consolidate slide text into a single semantic scale: title, subtitle, body, large body, caption, kicker, chrome/table text.
-   - Remove or tame the current deck-wide blanket remapping of Tailwind `text-*` utilities inside slides, because it can make compact UI/table labels unexpectedly huge.
-   - Add missing semantic classes if needed, especially for tables, badges, footers, source notes, and compact labels.
-
-3. **Apply consistency across active slides**
-   - Review all 87 registered slides and convert visible slide copy away from ad-hoc `text-sm`, `text-lg`, `text-5xl`, arbitrary `text-[...]`, etc. where those are being used as slide typography.
-   - Keep true UI controls/chrome compact, but make presentation text consistently readable and projector-safe.
-   - Fix recurring layout issues caused by oversized text in grids, cards, tables, quote blocks, and multi-column slides.
-
-4. **Keep the visual system cohesive**
-   - Preserve the current dark theatrical keynote theme, but normalize contrast, foreground opacity, card borders, and accent usage so slides feel like one deck.
-   - Avoid changing content or adding new visual ideas; this is a readability/cohesion pass.
-
-5. **Validate in fullscreen dimensions**
-   - Use a 1920×1080 Playwright audit to scan the deck for overflow/squished text indicators.
-   - Visually check representative slides: title, slide 6 table, “Three Things to Borrow,” dense research/stat slides, cards/grids, and final slide.
-   - Make a second pass on any slides that still overflow or look inconsistent.
+## Validation
+- Check the opening, audience-specific slides, and closing at presentation dimensions.
+- Confirm no active Penske branding remains and the preview builds cleanly.
