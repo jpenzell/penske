@@ -10,8 +10,8 @@ interface ElephantQuestionContextType {
 const ElephantQuestionContext = createContext<ElephantQuestionContextType | undefined>(undefined);
 
 export const ElephantQuestionProvider = ({ children }: { children: ReactNode }) => {
-  const [city, setCity] = useState("Detroit, Michigan");
-  const [stadium, setStadium] = useState("Ford Field");
+  const [city, setCity] = useState("Minneapolis, Minnesota");
+  const [stadium, setStadium] = useState("U.S. Bank Stadium");
 
   return (
     <ElephantQuestionContext.Provider value={{ city, stadium, setCity, setStadium }}>

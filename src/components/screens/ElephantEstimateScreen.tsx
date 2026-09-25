@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Loader2, RotateCcw, Bot, Users } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 
-const QUESTION = "How many ELEPHANTS could fit inside Ford Field?";
+const QUESTION = "How many ELEPHANTS could fit inside U.S. Bank Stadium?";
 
 type LiveProvider = { label: string; model: string };
 
@@ -82,7 +82,7 @@ export const ElephantEstimateScreen = () => {
           body: {
             prompt: QUESTION,
             context:
-              "You are an estimation expert estimating how many elephants could fit inside Ford Field in Detroit, Michigan. State assumptions in 1-2 sentences, then give a specific number of elephants. End your answer with the number followed by the word 'elephants'. Keep it under 60 words.",
+              "You are an estimation expert estimating how many elephants could fit inside U.S. Bank Stadium in Minneapolis, Minnesota. State assumptions in 1-2 sentences, then give a specific number of elephants. End your answer with the number followed by the word 'elephants'. Keep it under 60 words.",
             model,
           },
         })
@@ -145,7 +145,7 @@ export const ElephantEstimateScreen = () => {
           Live Estimate
         </p>
         <h1 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight">
-          How many <span className="text-primary italic">elephants</span> fit in Ford Field?
+          How many <span className="text-primary italic">elephants</span> fit in U.S. Bank Stadium?
         </h1>
       </header>
 
